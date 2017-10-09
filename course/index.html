@@ -18,9 +18,9 @@
             </div>
         </div>
     </nav>
-
-    <!-- tabela -->
     <div class="container-fluid">
+        <!-- tabela -->
+
         <div class="form-inline">
             <div class="form-group">
                 <input type="text" class="form-control" id="desc" placeholder="description">
@@ -32,14 +32,17 @@
                 <input type="text" class="form-control" id="value" placeholder="value">
             </div>
             <span id="btnUpdate" style="display: none">
-                <button onclick="updateData();" type="button" class="btn btn-success">Save</button>
-                <button onclick="resetForm();" type="button" class="btn btn-danger">Cancel</button>                    
+                <span id="inputIDUpdate"></span>
+            <button onclick="updateData();" type="button" class="btn btn-success">Save</button>
+            <button onclick="resetForm();" type="button" class="btn btn-danger">Cancel</button>
             </span>
             <button id="btnAdd" onclick="addData();" type="button" class="btn btn-default">Add</button>
         </div>
+
+        <div id="errors" style="display: none"></div>
+        <table id="listTable" class="table">
+        </table>
     </div>
-    <table id="listTable" class="table">
-    </table>
     <!-- Scripts -->
     <script src="js/config.js"></script>
     <script src="js/main.js"></script>
